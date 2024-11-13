@@ -71,6 +71,7 @@ const createstudentValidationSchema = z.object({
       profileImg: z.string().optional(),
       isActive: z.enum(['active', 'blocked']).default('active'),
       admissionSemester: z.string(),
+      academicDepartment: z.string(),
     }),
   }),
 });
