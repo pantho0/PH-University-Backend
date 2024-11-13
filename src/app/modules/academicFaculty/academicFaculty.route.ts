@@ -16,7 +16,7 @@ router.post(
 router.get('/:facultyId', AcademicFacultyControllers.getSingleAcademicFaculty);
 
 router.patch(
-  '/:semesterId',
+  '/:facultyId',
   validateRequest(
     AcademicFacultyValidation.updateAcademicFacultyValidationSchema,
   ),
